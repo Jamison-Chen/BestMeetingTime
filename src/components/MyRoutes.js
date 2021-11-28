@@ -5,8 +5,8 @@ import Home from "./Home.js";
 import { CreateRoomPage } from "./CreateRoomPage.js";
 import { EnterRoomPage } from "./EnterRoomPage.js";
 import CheckIdentityPage from "./CheckIdentityPage.js";
-import { LoginPage } from "./LoginPage.js";
-import { Room } from "./Room.js";
+import LoginPage from "./LoginPage.js";
+import Room from "./Room.js";
 import RegisterPage from "./RegisterPage.js";
 
 export default function MyRoutes() {
@@ -15,7 +15,7 @@ export default function MyRoutes() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/create-room" element={<CreateRoomPage />} />
             <Route exact path="/enter-room" element={<EnterRoomPage />} />
-            <Route exact path="/room" element={<Room />} />
+            <Route exact path="/room/:roomNumber" element={<Room />} />
             <Route
                 exact
                 path="/room/:roomNumber/check-identity"

@@ -4,6 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import "./index.css";
+import "./components/css/Common.css";
 import MyRoutes from "./components/MyRoutes.js";
 
 ReactDOM.render(

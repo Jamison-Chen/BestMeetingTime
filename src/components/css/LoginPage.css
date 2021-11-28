@@ -1,0 +1,78 @@
+#log-in-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+#log-in-form {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 3%;
+    padding: 10px 25px;
+    min-width: 300px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 1px #00000030;
+}
+
+.form-head {
+    margin: 25px 0;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    text-align: start;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.input-label {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.e-mail-input {
+    width: 60%;
+    margin: 0 20%;
+}
+
+.form-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.back-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #4c8bf5;
+}
+
+.log-in-btn {
+    border-radius: 3px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: #1aa260;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 15px 8px 15px;
+    transition-duration: 300ms;
+}
+
+.log-in-btn:hover {
+    background-color: #1aa260;
+    color: #fff;
+}

@@ -33,6 +33,7 @@ export class EnterRoomPage extends React.Component {
                     <div id="input-container">
                         <input
                             id="room-number-input"
+                            className="underline-input"
                             type="text"
                             name="room-number"
                             value={this.state.roomNumber}

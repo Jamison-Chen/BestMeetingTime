@@ -4,27 +4,6 @@
     justify-content: space-around;
 }
 
-#room-number-input {
-    width: 60%;
-    border: none;
-    border-bottom: 1px solid #444;
-    padding: 0 5%;
-    font-size: 1rem;
-    text-align: center;
-    color: #888;
-}
-
-#room-number-input:focus {
-    outline: none;
-}
-
-#room-number-input:-webkit-autofill,
-#room-number-input:-webkit-autofill:hover,
-#room-number-input:-webkit-autofill:focus,
-#room-number-input:-webkit-autofill:active {
-    box-shadow: 0 0 0 30px white inset;
-}
-
 #go-btn {
     display: flex;
     justify-content: center;

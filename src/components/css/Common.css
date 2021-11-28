@@ -1,0 +1,20 @@
+.underline-input {
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #444;
+    padding: 0 5%;
+    font-size: 1rem;
+    text-align: center;
+    color: #888;
+}
+
+.underline-input:focus {
+    outline: none;
+}
+
+.underline-input:-webkit-autofill,
+.underline-input:-webkit-autofill:hover,
+.underline-input:-webkit-autofill:focus,
+.underline-input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px white inset;
+}

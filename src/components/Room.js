@@ -1,24 +1,17 @@
 import React from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import "./css/Room.css";
 
-export class Room extends React.Component {
-    getRoomNumber() {
-        return window.location.href
-            .split("room-number")[1]
-            .split("&")[0]
-            .slice(1);
-    }
+class Room extends React.Component {
     componentDidMount() {
         if (this.props.isLoggedIn) fetch("mybackend");
     }
     decideView() {
-        let loggedIn = true;
-        return loggedIn ? (
+        return this.props.loggedIn ? (
             this.getMainView()
         ) : (
             <Navigate
-                to={`./check-identity?room-number=${this.getRoomNumber()}`}
+                to={`./check-identity?room-number=${this.props.params.roomNumber}`}
             />
         );
     }
@@ -26,7 +19,7 @@ export class Room extends React.Component {
         return (
             <>
                 <div>Main View</div>
-                Room: {this.getRoomNumber()}
+                Room: {this.props.params.roomNumber}
             </>
         );
     }
@@ -40,4 +33,8 @@ export class Room extends React.Component {
             </div>
         );
     }
+}
+
+export default function WrapperFunction(props) {
+    return <Room {...props} params={useParams()} />;
 }
